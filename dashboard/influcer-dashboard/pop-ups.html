@@ -12,29 +12,381 @@
   </head>
 
   <body>
-    <div class="review-pop-up pop-up">
-      <div class="pop-content">
-        <div class="pop-up-head">
-          <h4>Review</h4>
-          <span><img src="../../images/cross.svg" alt="" /></span>
-        </div>
-        <div class="pop-body">
-          <p>
-            Share your experience with the community to help them make better
-            decisions.
-          </p>
-          <div class="rating-card">
-            <div class="tx">
-              <h3>Communication With User</h3>
-            <h6>How responsive was the user during the process?</h6>
+    <div class="pop-page">
+      <div class="review-pop-up pop-up">
+        <div class="pop-content">
+          <div class="pop-up-head">
+            <h4>Review</h4>
+            <span><img src="../../images/cross.svg" alt="" /></span>
+          </div>
+          <div class="pop-body">
+            <div class="row">
+              <div class="col-md-7 pe-2">
+                <p>
+                  Share your experience with the community to help them make
+                  better decisions.
+                </p>
+                <div class="rating-card">
+                  <div class="tx">
+                    <h3>Communication With User</h3>
+                    <h6>How responsive was the user during the process?</h6>
+                  </div>
+                  <img src="../../images/stars.svg" alt="" />
+                </div>
+                <div class="rating-card">
+                  <div class="tx">
+                    <h3>Services as Described</h3>
+                    <h6>Did the results match the collab description?</h6>
+                  </div>
+                  <img src="../../images/stars.svg" alt="" />
+                </div>
+                <div class="rating-card">
+                  <div class="tx">
+                    <h3>Collaborate Again or Recommend?</h3>
+                    <h6>Would you recommend collaborating with this user?</h6>
+                  </div>
+                  <img src="../../images/stars.svg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-3 ms-auto">
+                <div class="rate-prof">
+                  <img src="../../images/pop-up-user.svg" alt="" />
+                  <h5>Sarah Woodland</h5>
+                  <h6>Spotify</h6>
+                  <ul>
+                    <li>Start Date <span>4/10/24</span></li>
+                    <li>End Date <span>5/07/24</span></li>
+                    <li>Compensation <span>$1,000</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <form action="#">
+                  <textarea
+                    placeholder="Leave a review for this collaboration..."
+                  ></textarea>
+                  <div class="btn-sec">
+                    <button class="skip">Skip</button>
+                    <button class="leave">Leave Feedback</button>
+                  </div>
+                </form>
+              </div>
             </div>
-            <img src="../../images/stars.svg" alt="">
           </div>
         </div>
       </div>
-    </div>
+      <div class="upload-submit-pop-up pop-up">
+        <div class="pop-content">
+          <div class="pop-up-head">
+            <h4>Upload & Submit Content</h4>
+            <span><img src="../../images/cross.svg" alt="" /></span>
+          </div>
+          <div class="pop-body">
+            <form action="#">
+              <div class="form-row">
+                <label for="">1. Upload your media file</label>
+                <div class="input-wrp file-wrp">
+                  <input type="file" />
+                  <div class="tx">
+                    <img src="../../images/upload.svg" alt="" />
+                    <h6>Upload Content</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="">2. Paste the link to your content</label>
+                <div class="input-wrp">
+                  <input
+                    type="text"
+                    placeholder="Paste the link to your content here"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="">3. Enter your content metrics</label>
+                <div class="row">
+                  <div class="col-md-4">
+                    <label for="#">Like</label>
+                    <div class="input-wrp">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="#">Comments</label>
+                    <div class="input-wrp">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="#">Views</label>
+                    <div class="input-wrp">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-sec">
+                <button class="cancel">Cancel</button>
+                <button class="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="request-to-join-pop-up pop-up">
+        <div class="pop-content">
+          <div class="pop-up-head">
+            <h4>Account Details</h4>
+            <span><img src="../../images/cross.svg" alt="" /></span>
+          </div>
+          <div class="pop-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-wrp">
+                  <label for="">First Name</label>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-wrp">
+                  <label for="">Last Name</label>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="input-wrp">
+                  <label for="#">Phone Number</label>
+                  <input type="number" />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="input-wrp">
+                  <label for="#">Location</label>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="input-wrp">
+                  <label for="#">Email</label>
+                  <input type="email" />
+                </div>
+              </div>
+              <div class="btn-sec">
+                <button class="cancel">Cancel</button>
+                <button class="save">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="password pop-up">
+        <div class="pop-content">
+          <div class="pop-up-head">
+            <h4>Password</h4>
+            <span><img src="../../images/cross.svg" alt="" /></span>
+          </div>
+          <div class="pop-body">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="input-wrp">
+                  <label for="#">Old Password</label>
+                  <input type="password" />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="input-wrp">
+                  <label for="#">New Password</label>
+                  <input type="password" />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="input-wrp">
+                  <label for="#">Confirm New Password </label>
+                  <input type="password" />
+                </div>
+                <a href="#" class="forgot-password-link">Forgot password? </a>
+              </div>
+              <div class="btn-sec">
+                <button class="cancel">Cancel</button>
+                <button class="save">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="notification-pop-up pop-up">
+        <div class="pop-content">
+          <div class="pop-up-head">
+            <h4>Notifications</h4>
+            <span><img src="../../images/cross.svg" alt="" /></span>
+          </div>
+          <div class="pop-body">
+            <ul class="tabs">
+              <li class="active">
+                <a href="#"
+                  ><img src="../../images/notify-all.svg" alt="" /> All</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../../images/notify-list.svg" alt="" /> Listings</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../../images/notify-campaign.svg" alt="" />
+                  Campaigns</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content">
+              <ul class="notification-list">
+                <li>
+                 <a href="#">
+                  <div class="image">
+                    <img src="../../images/not-1.svg" alt="" />
+                  </div>
+                  <div class="tx">
+                    <p>
+                      <b>Sarah Woodland</b> has submitted work for campaign
+                      <b>“Travel Influencer”</b>
+                    </p>
+                    <h6>Campaigns <span>2h ago</span></h6>
+                  </div>
+                 </a>
+                </li>
+                <li>
+                 <a href="#">
+                  <div class="image group-img">
+                    <div class="images">
+                      <img src="../../images/g1.svg" alt="" />
+                      <img src="../../images/g2.svg" alt="" />
+                    </div>
+                    <span>+4</span>
+                  </div>
+                  <div class="tx">
+                    <p>
+                      <b>Talia Smith</b> and 5 others have applied to
+                      <b>“Female Fitness Influencer”</b>
+                    </p>
+                    <h6>Listings <span>2h ago</span></h6>
+                  </div>
+                 </a>
+                </li>
+                <li>
+                 <a href="#">
+                  <div class="image">
+                    <img src="../../images/not-1.svg" alt="" />
+                  </div>
+                  <div class="tx">
+                    <p>
+                      <b>Sarah Woodland</b> has submitted work for campaign
+                      <b>“Travel Influencer”</b>
+                    </p>
+                    <h6>Campaigns <span>2h ago</span></h6>
+                  </div>
+                 </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="image group-img">
+                      <div class="images">
+                        <img src="../../images/g3.svg" alt="" />
+                        <img src="../../images/g4.svg" alt="" />
+                      </div>
+                      <span>+4</span>
+                    </div>
+                    <div class="tx">
+                      <p>
+                        <b>Talia Smith</b> and 5 others have applied to
+                        <b>“Female Fitness Influencer”</b>
+                      </p>
+                      <h6>Listings <span>2h ago</span></h6>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                 <a href="#">
+                  <div class="image">
+                    <img src="../../images/not-1.svg" alt="" />
+                  </div>
+                  <div class="tx">
+                    <p>
+                      <b>Sarah Woodland</b> has submitted work for campaign
+                      <b>“Travel Influencer”</b>
+                    </p>
+                    <h6>Campaigns <span>2h ago</span></h6>
+                  </div>
+                 </a>
+                </li>
+                <li>
+                 <a href="#">
+                  <div class="image">
+                    <img src="../../images/not-1.svg" alt="" />
+                  </div>
+                  <div class="tx">
+                    <p>
+                      <b>Sarah Woodland</b> has submitted work for campaign
+                      <b>“Travel Influencer”</b>
+                    </p>
+                    <h6>Campaigns <span>2h ago</span></h6>
+                  </div>
+                 </a>
+                </li>
+                <li>
+                 <a href="#">
+                  <div class="image group-img">
+                    <div class="images">
+                      <img src="../../images/g5.svg" alt="" />
+                      <img src="../../images/g6.svg" alt="" />
+                    </div>
+                    <span>+4</span>
+                  </div>
+                  <div class="tx">
+                    <p>
+                      <b>Talia Smith</b> and 5 others have applied to
+                      <b>“Female Fitness Influencer”</b>
+                    </p>
+                    <h6>Listings <span>2h ago</span></h6>
+                  </div>
+                 </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="image">
+                      <img src="../../images/not-1.svg" alt="" />
+                    </div>
+                    <div class="tx">
+                      <p>
+                        <b>Sarah Woodland</b> has submitted work for campaign
+                        <b>“Travel Influencer”</b>
+                      </p>
+                      <h6>Campaigns <span>2h ago</span></h6>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="image">
+                      <img src="../../images/not-1.svg" alt="" />
+                    </div>
+                    <div class="tx">
+                      <p>
+                        <b>Sarah Woodland</b> has submitted work for campaign
+                        <b>“Travel Influencer”</b>
+                      </p>
+                      <h6>Campaigns <span>2h ago</span></h6>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="backdrop"></div>
+      <div class="backdrop"></div>
+    </div>
 
     <script src="js/bootstrap.min.js"></script>
     <script
