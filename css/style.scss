@@ -1873,6 +1873,9 @@ footer {
 .campaign-profile {
   border-radius: 1rem;
   overflow: hidden;
+  & > img{
+    width: 100%;
+  }
   .det {
     padding: 0.75rem 5rem;
     background: var(--Brand-Deep-blue, #0f1d3b);
