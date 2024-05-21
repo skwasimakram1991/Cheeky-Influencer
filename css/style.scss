@@ -104,6 +104,17 @@ ul {
   &::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
   }
+  .cross{
+    position: absolute;
+    z-index: 999;
+    right: 1rem;
+    top: 1rem;
+    display: none;
+    i{
+      color: #2870fb;
+      font-size: 2rem;
+    }
+  }
   .logo-sec {
     margin-bottom: 2.5rem;
   }
@@ -137,6 +148,13 @@ ul {
       }
       &.has-sub {
         margin-bottom: 1.25rem;
+        .sub{
+          max-height: 0rem;
+          overflow: hidden;
+          &.active-sub{
+             max-height: 25rem;
+          }
+        }
         & > a {
           position: relative;
           margin-bottom: 0.19rem;
@@ -234,6 +252,21 @@ header {
   top: 0;
   width: 100%;
   z-index: 999;
+  .row{
+    align-items: center;
+  }
+  .heading{
+    display: flex;
+    align-items: center;
+    .ham{
+      margin-right: 2rem;
+      display: none;
+      i{
+        font-size: 2.5rem;
+        color: #006aff;
+      }
+    }
+  }
   h3 {
     color: #0f1d3b;
     font-size: 2rem;
@@ -687,11 +720,14 @@ header {
     margin-top: 1.25rem;
     table {
       width: 100%;
+
       tr {
         td:nth-child(1),
         th:nth-child(1) {
           text-align: left;
-          max-width: 11.125rem;
+          .prof {
+            max-width: 11.125rem;
+          }
         }
         td:nth-child(2),
         th:nth-child(2) {
@@ -736,6 +772,11 @@ header {
         line-height: normal;
         margin-bottom: 0.38rem;
         text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        max-width: 174px;
       }
       a {
         overflow: hidden;
@@ -774,7 +815,9 @@ header {
         td:nth-child(1),
         th:nth-child(1) {
           text-align: left;
-          max-width: 12.125rem;
+          .prof {
+            max-width: 12.125rem;
+          }
         }
         td:nth-child(3),
         th:nth-child(3) {
@@ -1378,6 +1421,12 @@ footer {
     align-items: center;
     padding: 0.91rem 1.25rem;
     border-bottom: 1px solid #e3e3e5;
+    .back{
+      display: none;
+      i{
+        font-size: 1.5rem;
+      }
+    }
     .imgsection {
       display: flex;
       align-items: center;
@@ -1873,7 +1922,7 @@ footer {
 .campaign-profile {
   border-radius: 1rem;
   overflow: hidden;
-  & > img{
+  & > img {
     width: 100%;
   }
   .det {
@@ -2790,11 +2839,13 @@ footer {
         img {
           position: relative;
           &:first-of-type {
+            width: 65%;
             left: 0rem;
           }
           &:last-of-type {
             right: 1.2rem;
             margin-right: -1.2rem;
+            width: 65%;
           }
         }
         span {
@@ -2884,8 +2935,10 @@ footer {
           position: relative;
           &:first-of-type {
             left: 0rem;
+            width: 70%;
           }
           &:last-of-type {
+            width: 70%;
             right: 1.2rem;
             margin-right: -1.2rem;
           }
@@ -3113,11 +3166,11 @@ footer {
   .label-wrp {
     a {
       margin-left: 1rem;
-      color: var(--Brand-Blue, #2870FB);
-font-size: 1rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+      color: var(--Brand-Blue, #2870fb);
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
     }
   }
 }
@@ -3175,64 +3228,62 @@ line-height: normal;
     border: 1px solid var(--Brand-Blue, #2870fb);
     background: rgba(40, 112, 251, 0.05);
   }
- &.paid-billing{
-  align-items: flex-start;
-  .butn{
-    padding: 0.61rem 1.75rem;
-  }
-  .pay-card{
-    margin-bottom: 0.94rem;
-    display: flex;
-    gap: 0 1rem;
-    align-items: center;
-    h6{
-      color: var(--Text-Manrope, #0F1D3B);
-      font-size: 1.25rem;
+  &.paid-billing {
+    align-items: flex-start;
+    .butn {
+      padding: 0.61rem 1.75rem;
+    }
+    .pay-card {
+      margin-bottom: 0.94rem;
+      display: flex;
+      gap: 0 1rem;
+      align-items: center;
+      h6 {
+        color: var(--Text-Manrope, #0f1d3b);
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 0;
+        margin-right: 1rem;
+      }
+    }
+    p {
+      color: var(--Text-Inter, #898b97);
+      font-size: 1.125rem;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       line-height: normal;
-margin-bottom: 0;
-margin-right: 1rem;
+      max-width: 100%;
+    }
+    h6 {
+      color: var(--Text-Manrope, #0f1d3b);
+      font-family: Manrope;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    .right {
+      padding-top: 3.5rem;
+    }
+    .remove {
+      color: #ee2d00;
+    }
+    .pay-method {
+      margin-top: 2rem;
     }
   }
-  p{
-    color: var(--Text-Inter, #898B97);
-font-size: 1.125rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-max-width: 100%;
+  .pay-method {
+    display: flex;
+    gap: 0 0.81rem;
+    color: var(--Brand-Blue, #2870fb);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
-  h6{
-    color: var(--Text-Manrope, #0F1D3B);
-font-family: Manrope;
-font-size: 1rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-  }
-  
-  .right{
-    padding-top: 3.5rem;
-  }
-  .remove{
-    color: #EE2D00;
-  }
-  .pay-method{
-    margin-top: 2rem;
-  }
- }
- .pay-method{
-  display: flex;
-  gap: 0 0.81rem;
-  color: var(--Brand-Blue, #2870FB);
-font-size: 1.125rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
 }
 
 //end of billing
-
-

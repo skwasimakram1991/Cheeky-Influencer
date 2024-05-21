@@ -96,6 +96,17 @@ ul {
 .sidebar::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
+.sidebar .cross {
+  position: absolute;
+  z-index: 999;
+  right: 1rem;
+  top: 1rem;
+  display: none;
+}
+.sidebar .cross i {
+  color: #2870fb;
+  font-size: 2rem;
+}
 .sidebar .logo-sec {
   margin-bottom: 2.5rem;
 }
@@ -124,6 +135,13 @@ ul {
 }
 .sidebar .side-nav li.has-sub {
   margin-bottom: 1.25rem;
+}
+.sidebar .side-nav li.has-sub .sub {
+  max-height: 0rem;
+  overflow: hidden;
+}
+.sidebar .side-nav li.has-sub .sub.active-sub {
+  max-height: 25rem;
 }
 .sidebar .side-nav li.has-sub > a {
   position: relative;
@@ -213,6 +231,21 @@ header {
   top: 0;
   width: 100%;
   z-index: 999;
+}
+header .row {
+  align-items: center;
+}
+header .heading {
+  display: flex;
+  align-items: center;
+}
+header .heading .ham {
+  margin-right: 2rem;
+  display: none;
+}
+header .heading .ham i {
+  font-size: 2.5rem;
+  color: #006aff;
 }
 header h3 {
   color: #0f1d3b;
@@ -624,6 +657,9 @@ header h3 {
 .prof-activity .table-sec table tr td:nth-child(1),
 .prof-activity .table-sec table tr th:nth-child(1) {
   text-align: left;
+}
+.prof-activity .table-sec table tr td:nth-child(1) .prof,
+.prof-activity .table-sec table tr th:nth-child(1) .prof {
   max-width: 11.125rem;
 }
 .prof-activity .table-sec table tr td:nth-child(2),
@@ -662,6 +698,11 @@ header h3 {
   line-height: normal;
   margin-bottom: 0.38rem;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  max-width: 174px;
 }
 .prof-activity .table-sec .prof a {
   overflow: hidden;
@@ -697,6 +738,9 @@ header h3 {
 .campaigns .table-sec table tr td:nth-child(1),
 .campaigns .table-sec table tr th:nth-child(1) {
   text-align: left;
+}
+.campaigns .table-sec table tr td:nth-child(1) .prof,
+.campaigns .table-sec table tr th:nth-child(1) .prof {
   max-width: 12.125rem;
 }
 .campaigns .table-sec table tr td:nth-child(3),
@@ -1247,6 +1291,12 @@ footer h6 {
   align-items: center;
   padding: 0.91rem 1.25rem;
   border-bottom: 1px solid #e3e3e5;
+}
+.chat-window .chathead .back {
+  display: none;
+}
+.chat-window .chathead .back i {
+  font-size: 1.5rem;
 }
 .chat-window .chathead .imgsection {
   display: flex;
@@ -2558,11 +2608,13 @@ footer h6 {
   position: relative;
 }
 .notification-pop-up .notification-list li .group-img img:first-of-type {
+  width: 65%;
   left: 0rem;
 }
 .notification-pop-up .notification-list li .group-img img:last-of-type {
   right: 1.2rem;
   margin-right: -1.2rem;
+  width: 65%;
 }
 .notification-pop-up .notification-list li .group-img span {
   display: flex;
@@ -2640,8 +2692,10 @@ footer h6 {
 }
 .notification-sec .notification-list li .group-img img:first-of-type {
   left: 0rem;
+  width: 70%;
 }
 .notification-sec .notification-list li .group-img img:last-of-type {
+  width: 70%;
   right: 1.2rem;
   margin-right: -1.2rem;
 }
@@ -2846,7 +2900,7 @@ footer h6 {
 }
 .account-details .label-wrp a {
   margin-left: 1rem;
-  color: var(--Brand-Blue, #2870FB);
+  color: var(--Brand-Blue, #2870fb);
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -2916,7 +2970,7 @@ footer h6 {
   align-items: center;
 }
 .billing.paid-billing .pay-card h6 {
-  color: var(--Text-Manrope, #0F1D3B);
+  color: var(--Text-Manrope, #0f1d3b);
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 500;
@@ -2925,7 +2979,7 @@ footer h6 {
   margin-right: 1rem;
 }
 .billing.paid-billing p {
-  color: var(--Text-Inter, #898B97);
+  color: var(--Text-Inter, #898b97);
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
@@ -2933,7 +2987,7 @@ footer h6 {
   max-width: 100%;
 }
 .billing.paid-billing h6 {
-  color: var(--Text-Manrope, #0F1D3B);
+  color: var(--Text-Manrope, #0f1d3b);
   font-family: Manrope;
   font-size: 1rem;
   font-style: normal;
@@ -2944,7 +2998,7 @@ footer h6 {
   padding-top: 3.5rem;
 }
 .billing.paid-billing .remove {
-  color: #EE2D00;
+  color: #ee2d00;
 }
 .billing.paid-billing .pay-method {
   margin-top: 2rem;
@@ -2952,7 +3006,7 @@ footer h6 {
 .billing .pay-method {
   display: flex;
   gap: 0 0.81rem;
-  color: var(--Brand-Blue, #2870FB);
+  color: var(--Brand-Blue, #2870fb);
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 600;
