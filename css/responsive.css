@@ -1,444 +1,457 @@
-
-@media(max-width:1499px){
-  html{
+@media (max-width: 1599px) {
+  html {
+    font-size: 91%;
+  }
+}
+@media (max-width: 1499px) {
+  html {
     font-size: 90%;
   }
 }
-@media(max-width:1399px){
-  html{
+@media (max-width: 1399px) {
+  html {
     font-size: 77%;
   }
-  .chat-window .chathead .imgsection .imgcontainer:before{
+  .chat-window .chathead .imgsection .imgcontainer:before {
     height: 0.8675rem;
     width: 0.8675rem;
   }
-  .connected-platform .card-sec li .butn.add{
+  .connected-platform .card-sec li .butn.add {
     align-items: center;
   }
-  .connected-platform .card-sec li .butn.add img{
-    height:1.7rem;
+  .connected-platform .card-sec li .butn.add img {
+    height: 1.7rem;
   }
-
 }
-@media(max-width:1199px){
-  html{
+@media (max-width: 1199px) {
+  html {
     font-size: 65%;
   }
- .select-wrp > img{
+  .select-wrp > img {
     width: 1.2rem;
   }
-  
 }
 
-@media(max-width:991px){
-  table td, table th{
-   white-space: nowrap;
+@media (max-width: 991px) {
+  table td,
+  table th {
+    white-space: nowrap;
   }
-  .prof-activity .table-sec table tr td:nth-child(1) .prof, .prof-activity .table-sec table tr th:nth-child(1) .prof {
+  .prof-activity .table-sec table tr td:nth-child(1) .prof,
+  .prof-activity .table-sec table tr th:nth-child(1) .prof {
     width: auto;
     max-width: 100%;
+  }
+  .campaigns .table-sec .prof {
+    width: auto;
+    max-width: 100% !important;
+  }
+  .campaigns .table-sec tr > td:nth-child(2) {
+    width: 12rem;
+    padding-right: 5rem;
+    max-width: 100%;
+  }
+  .stats .stats-card .image img {
+    width: 60%;
+  }
+  .profile-views {
+    margin-bottom: 3rem;
+  }
+  .notification .updates li h6 {
+    font-size: 1rem;
+  }
+  .notification .updates li p {
+    font-size: 0.825rem;
+    max-width: 100%;
+  }
+  .page-wrap .content-wrap {
+    width: 100%;
+  }
+  .page-wrap .sidebar {
+    z-index: 99;
+  }
+  .page-wrap .sidebar {
+    width: 30%;
+  }
+  .sidebar {
+    padding-top: 3rem;
+    left: -100%;
+  }
+  .sidebar.active {
+    left: 0;
+  }
+  .sidebar .cross {
+    display: block;
+  }
+  header .heading .ham {
+    display: block;
+  }
+  .page-wrap .main-content {
+    min-height: calc(100vh - 117px);
+    padding: 0 2rem;
+  }
 }
-.campaigns .table-sec .prof{
-  width: auto;
-  max-width: 100% !important;
-}
-.campaigns .table-sec tr > td:nth-child(2){
-  width: 12rem;
-  padding-right: 5rem;
-  max-width: 100%;
-}
-.stats .stats-card .image img{
-   width: 60%;
-}
-.profile-views{
-  margin-bottom: 3rem;
-}
-.notification .updates li h6{
-  font-size: 1rem;
-}
-.notification .updates li p{
-  font-size: 0.825rem;
-  max-width: 100%;
-}
-.page-wrap .content-wrap{
-  width: 100%;
-}
-.page-wrap .sidebar{
-  z-index: 99;
-}
-.page-wrap .sidebar {
-  width: 30%;
-}
-.sidebar{
-  padding-top: 3rem;
-  left: -100%;
-}
-.sidebar.active{
-  left: 0;
-}
-.sidebar .cross{
-  display: block;
-}
-header .heading .ham{
-  display: block;
-}
-.page-wrap .main-content {
-  min-height: calc(100vh - 117px);
-  padding: 0 2rem;
-}
- 
-}
-@media(max-width:767px){
-  html{
+@media (max-width: 767px) {
+  html {
     font-size: 76%;
   }
-  header{
-    padding:1rem 1.5rem;
-   
+  header {
+    padding: 1rem 1.5rem;
   }
-  .search-score .tx p{
+  .search-score .tx p {
     margin-bottom: 1.75rem;
   }
   header .heading .ham {
     margin-right: 1rem;
-}
-  header h3{
+  }
+  header h3 {
     font-size: 1.4rem;
   }
-  .header-profile-portion .profile .tx{
+  .header-profile-portion .profile .tx {
     display: none;
   }
-  .header-profile-portion .profile a::after{
+  .header-profile-portion .profile a::after {
     content: none;
   }
-  .header-profile-portion .profile a{
+  .header-profile-portion .profile a {
     padding-right: 0;
   }
   .header-profile-portion li a {
     margin-left: 0.85rem;
-}
-.top-sec .select-wrapper{
-  justify-content: center;
-}
-.page-wrap .main-content{
-  padding: 1rem;
-}
-.search-score{
-  margin-top: 1rem;
-}
-.search-score::before{
-  content: none;
-}
-.search-score h5,.search-score .right h4,.search-score .right p{
-  text-align: center;
-}
-.search-score .inner-wrap{
-  flex-direction: column;
-}
-.percent{
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-.search-score .inner-wrap{
-  padding-right: 0;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-.search-score .ps-5{
-  padding-left: 1rem !important;
-}
-.stats .stats-card{
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.stats .stats-card{
-  text-align: center;
-}
-.stats .stats-card .image{
-  margin-bottom: 1rem;
-}
-.stats .stats-card .image img{
-  width: 50%;
-}
-.prof-activity .table-sec table tr td:nth-child(1) .prof, .prof-activity .table-sec table tr th:nth-child(1) .prof{
-  width: 15rem;
-}
-.campaigns .table-sec .prof{
-  width: 20rem;
-}
-.prof-activity{
-  margin-bottom: 0;
-}
-.page-wrap .sidebar{
-  width: 80%;
-}
-.sidebar .side-nav li > a,.sidebar .side-nav li.has-sub{
-  margin-bottom: 0.3rem;
-}
-.notification .updates li p,.notification .updates li p > a{
-  font-size: 1rem;
-}
-.chat-sidebar{
-  display: none;
-}
-.chat-sidebar.active{
-  display: block;
-  width: 100%;
-}
-.chat-window{
-  display: none;
-}
-.chat-window.active{
-  display: block;
-  width: 100%;
-}
-.chat-window .chatbody{
-  height: calc(100vh - 233px);
-}
-.breadcumb{
-  justify-content: center;
-}
-.search-sec{
-  margin-bottom: 1.4rem;
-}
-.select-wrapper{
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.select-wrapper .select-wrp.img-less select {
-  padding: 0.62rem 1.55rem 0.62rem 0.75rem;
-}
-.table-wrap{
-  margin-top: 1.5rem;
-}
-.select-wrapper .select-wrp::after{
-  width: 0.9rem;
-}
-.table-wrap table .prof{
-  width: 15rem;
-}
-.applied-listing-table tr > td:nth-child(1){
-  width: 12rem;
-}
-.applied-listing-table table{
-  width: 800px;
-}
-.review-top-sec {
-  margin-top: 0.5rem;
-}
-.review-top-sec .breadcumb{
-  margin-bottom: 1rem;
-}
-.review-list{
-  text-align: center;
-}
-.review-list .prof{
-  flex-direction: column;
-  gap: 1rem;
-}
-.review-list .list-top{
-  flex-direction: column;
-}
-.review-list .list-top .rating-date{
-  margin-top: 1rem;
-}
-.review-list .list-top .rating-date{
-  justify-content: center;
-}
-.noti-pagination-sec{
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-}
-.notification-sec .notification-list li p{
-  width: 85%;
-}
-.campaign-card{
-  flex-direction: column;
-  align-items: center;
-}
-.campaign-card .nums .status{
-  justify-content: center;
-}
-.campaign-card .nums .number{
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-.campaign-card .details .prof{
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-  text-align: center;
-}
-.campaign-card .tags{
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-.campaign-card .nums .number li:not(:last-child){
-  border-right: 0px;
-}
-.campaigns-top-sec{
-  margin-top: 0;
-}
-.campaigns-top-sec .tabs{
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-.top-sec.campaigns-top-sec .select-wrapper {
-  justify-content: center;
-}
-.campaign-card .tx p{
-  font-size: 0.9rem;
-}
-.campaigns-top-sec{
-  border-bottom: 0px;
-}
+  }
+  .top-sec .select-wrapper {
+    justify-content: center;
+  }
+  .page-wrap .main-content {
+    padding: 1rem;
+  }
+  .search-score {
+    margin-top: 1rem;
+  }
+  .search-score::before {
+    content: none;
+  }
+  .search-score h5,
+  .search-score .right h4,
+  .search-score .right p {
+    text-align: center;
+  }
+  .search-score .inner-wrap {
+    flex-direction: column;
+  }
+  .percent {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .search-score .inner-wrap {
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .search-score .ps-5 {
+    padding-left: 1rem !important;
+  }
+  .stats .stats-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .stats .stats-card {
+    text-align: center;
+  }
+  .stats .stats-card .image {
+    margin-bottom: 1rem;
+  }
+  .stats .stats-card .image img {
+    width: 50%;
+  }
+  .prof-activity .table-sec table tr td:nth-child(1) .prof,
+  .prof-activity .table-sec table tr th:nth-child(1) .prof {
+    width: 15rem;
+  }
+  .campaigns .table-sec .prof {
+    width: 20rem;
+  }
+  .prof-activity {
+    margin-bottom: 0;
+  }
+  .page-wrap .sidebar {
+    width: 80%;
+  }
+  .sidebar .side-nav li > a,
+  .sidebar .side-nav li.has-sub {
+    margin-bottom: 0.3rem;
+  }
+  .notification .updates li p,
+  .notification .updates li p > a {
+    font-size: 1rem;
+  }
+  .chat-sidebar {
+    display: none;
+  }
+  .chat-sidebar.active {
+    display: block;
+    width: 100%;
+  }
+  .chat-window {
+    display: none;
+  }
+  .chat-window.active {
+    display: block;
+    width: 100%;
+  }
+  .chat-window .chatbody {
+    height: calc(100vh - 233px);
+  }
+  .breadcumb {
+    justify-content: center;
+  }
+  .search-sec {
+    margin-bottom: 1.4rem;
+  }
+  .select-wrapper {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .select-wrapper .select-wrp.img-less select {
+    padding: 0.62rem 1.55rem 0.62rem 0.75rem;
+  }
+  .table-wrap {
+    margin-top: 1.5rem;
+  }
+  .select-wrapper .select-wrp::after {
+    width: 0.9rem;
+  }
+  .table-wrap table .prof {
+    width: 15rem;
+  }
+  .applied-listing-table tr > td:nth-child(1) {
+    width: 12rem;
+  }
+  .applied-listing-table table {
+    width: 800px;
+  }
+  .review-top-sec {
+    margin-top: 0.5rem;
+  }
+  .review-top-sec .breadcumb {
+    margin-bottom: 1rem;
+  }
+  .review-list {
+    text-align: center;
+  }
+  .review-list .prof {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .review-list .list-top {
+    flex-direction: column;
+  }
+  .review-list .list-top .rating-date {
+    margin-top: 1rem;
+  }
+  .review-list .list-top .rating-date {
+    justify-content: center;
+  }
+  .noti-pagination-sec {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .notification-sec .notification-list li p {
+    width: 85%;
+  }
+  .campaign-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .campaign-card .nums .status {
+    justify-content: center;
+  }
+  .campaign-card .nums .number {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .campaign-card .details .prof {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+  .campaign-card .tags {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .campaign-card .nums .number li:not(:last-child) {
+    border-right: 0px;
+  }
+  .campaigns-top-sec {
+    margin-top: 0;
+  }
+  .campaigns-top-sec .tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .top-sec.campaigns-top-sec .select-wrapper {
+    justify-content: center;
+  }
+  .campaign-card .tx p {
+    font-size: 0.9rem;
+  }
+  .campaigns-top-sec {
+    border-bottom: 0px;
+  }
 
-.campaign-info .total{
-  border-left: 0px;
-}
-.campaign-info .info-list{
-  padding-right: 0;
-  gap: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-.campaign-info{
-  flex-direction: column;
-  padding: 1.2rem;
-}
-.campaign-info .total{
-  padding-left: 0;
-  text-align: center;
-}
-.campaign-info .info-list li{
-  width: 45%;
-}
-.campaign-profile .det{
-  padding: 1rem;
-  align-items: center;
-  flex-direction: column;
-}
-.campaign-profile .tx{
-  text-align: center;
-}
-.campaign-profile .tx p{
-  justify-content: center;
-}
-.campaign-profile .det .image img{
-  width: 60%;
-  display: block;
-  margin: 0 auto 0.5rem;
-}
-.campaign-profile .tx p{
-  font-size: 1rem;
-}
-.campaign-profile > img{
-  height: 150px;
-  object-fit: cover;
-}
-.addition-campaign-details{
-  margin-bottom: 2rem;
-}
-.account-prof,.connected-platform .card-sec{
-  flex-wrap: wrap;
-}
-.account-prof,.account-prof .prof .tx h4{
-  justify-content: center;
-}
-.connected-platform .card-sec{
-  gap:2rem ;
-  justify-content: space-between;
-}
-.account-prof .prof{
-  flex-direction: column;
-  align-items: center;
-}
-.connected-platform h4{
-  text-align: center;
-}
-.account-details ul li{
-  width: 100%;
-}
-.billing{
-  flex-direction: column;
-  align-items: flex-start;
-}
-.billing .right{
-  margin-top: 1rem;
-}
-.account-prof{
-  margin-top: 1rem;
-  flex-direction: column;
-}
-.billing.paid-billing .pay-card{
-  flex-wrap: wrap;
-  gap: 1rem;
-}
+  .campaign-info .total {
+    border-left: 0px;
+  }
+  .campaign-info .info-list {
+    padding-right: 0;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .campaign-info {
+    flex-direction: column;
+    padding: 1.2rem;
+  }
+  .campaign-info .total {
+    padding-left: 0;
+    text-align: center;
+  }
+  .campaign-info .info-list li {
+    width: 45%;
+  }
+  .campaign-profile .det {
+    padding: 1rem;
+    align-items: center;
+    flex-direction: column;
+  }
+  .campaign-profile .tx {
+    text-align: center;
+  }
+  .campaign-profile .tx p {
+    justify-content: center;
+  }
+  .campaign-profile .det .image img {
+    width: 60%;
+    display: block;
+    margin: 0 auto 0.5rem;
+  }
+  .campaign-profile .tx p {
+    font-size: 1rem;
+  }
+  .campaign-profile > img {
+    height: 150px;
+    object-fit: cover;
+  }
+  .addition-campaign-details {
+    margin-bottom: 2rem;
+  }
+  .account-prof,
+  .connected-platform .card-sec {
+    flex-wrap: wrap;
+  }
+  .account-prof,
+  .account-prof .prof .tx h4 {
+    justify-content: center;
+  }
+  .connected-platform .card-sec {
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  .account-prof .prof {
+    flex-direction: column;
+    align-items: center;
+  }
+  .connected-platform h4 {
+    text-align: center;
+  }
+  .account-details ul li {
+    width: 100%;
+  }
+  .billing {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .billing .right {
+    margin-top: 1rem;
+  }
+  .account-prof {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+  .billing.paid-billing .pay-card {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 
-.billing.paid-billing .right,.billing h5{
-  padding-top: 0;
-  text-align: left;
-}
-.billing.paid-billing .right{
-  padding-top: 1rem;
-}
-.connected-platform .card-sec li img{
-  height: 3rem;
-}
-.header-profile-portion li:not(.profile) a > img{
-  height: 1.5rem;
-}
-.pagination{
-  justify-content: center;
-}
-.top-sec.campaigns-top-sec.review-top-sec .tabs,.top-sec.campaigns-top-sec.notification-top-sec .tabs{
-  margin-bottom: 0;
-  justify-content: flex-start;
-}
-.top-sec.campaigns-top-sec.review-top-sec .select-wrapper{
-  justify-content: flex-end;
-}
+  .billing.paid-billing .right,
+  .billing h5 {
+    padding-top: 0;
+    text-align: left;
+  }
+  .billing.paid-billing .right {
+    padding-top: 1rem;
+  }
+  .connected-platform .card-sec li img {
+    height: 3rem;
+  }
+  .header-profile-portion li:not(.profile) a > img {
+    height: 1.5rem;
+  }
+  .pagination {
+    justify-content: center;
+  }
+  .top-sec.campaigns-top-sec.review-top-sec .tabs,
+  .top-sec.campaigns-top-sec.notification-top-sec .tabs {
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
+  .top-sec.campaigns-top-sec.review-top-sec .select-wrapper {
+    justify-content: flex-end;
+  }
 
-
-.review-pop-up .rating-card{
-  flex-direction: column;
-}
-.review-pop-up .rating-card > img{
-  max-width: 150px;
-}
-.review-pop-up .rating-card,.review-pop-up .rating-card:last-child{
-  margin-bottom: 2rem;
-}
-.review-pop-up .rating-card{
-  align-items: center;
-  text-align: center;
-}
-.review-pop-up .pop-body p{
-  text-align: center;
-}
-.pop-up .btn-sec{
-  justify-content: center;
-}
-.notification-pop-up .notification-list .tx{
-  width: 80%;
-}
-.notification-pop-up .notification-list .tx p,.notification-pop-up .notification-list .tx h6,.notification-pop-up .notification-list .tx h6 span{
-  font-size: 1rem;
-}
-.pop-up{
-  width: 95%;
-  margin: auto;
-}
-.chat-window .chathead .back{
-  display: block;
-}
-.chat-window .chatfoot input[type=text]{
-  font-size: 0.9rem;
-}
+  .review-pop-up .rating-card {
+    flex-direction: column;
+  }
+  .review-pop-up .rating-card > img {
+    max-width: 150px;
+  }
+  .review-pop-up .rating-card,
+  .review-pop-up .rating-card:last-child {
+    margin-bottom: 2rem;
+  }
+  .review-pop-up .rating-card {
+    align-items: center;
+    text-align: center;
+  }
+  .review-pop-up .pop-body p {
+    text-align: center;
+  }
+  .pop-up .btn-sec {
+    justify-content: center;
+  }
+  .notification-pop-up .notification-list .tx {
+    width: 80%;
+  }
+  .notification-pop-up .notification-list .tx p,
+  .notification-pop-up .notification-list .tx h6,
+  .notification-pop-up .notification-list .tx h6 span {
+    font-size: 1rem;
+  }
+  .pop-up {
+    width: 95%;
+    margin: auto;
+  }
+  .chat-window .chathead .back {
+    display: block;
+  }
+  .chat-window .chatfoot input[type="text"] {
+    font-size: 0.9rem;
+  }
 }
