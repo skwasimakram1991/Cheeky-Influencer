@@ -3491,4 +3491,59 @@ footer h6 {
 }
 .brand-campaign-details2-table-wrap table tr td .prof img {
   margin-right: 0;
+}
+
+.brand-side-tab.campaigns-top-sec {
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+  border: 1px solid var(--Stroke, #E3E3E5);
+  background: #FFF;
+  margin: 0;
+}
+.brand-side-tab.campaigns-top-sec .tabs {
+  gap: 0;
+  margin-bottom: 1.5rem;
+}
+.brand-side-tab.campaigns-top-sec .tabs li {
+  width: 50%;
+}
+.brand-side-tab.campaigns-top-sec .tabs li.active a {
+  color: var(--Text-Manrope, #0F1D3B);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+}
+.brand-side-tab.campaigns-top-sec .tabs a {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #E3E3E5;
+  color: var(--Text-Inter, #898B97);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+.brand-side-tab.campaigns-top-sec .tabs a span {
+  border-radius: 1.25rem;
+  background: var(--Other-Color-Red, #FB4545);
+  color: #FFF;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.brand-side-tab.campaigns-top-sec .chat-sidebar {
+  width: 100%;
+  border: 0px;
+}
+.brand-side-tab.campaigns-top-sec .chat-sidebar .chat-contacts {
+  padding: 0;
+}
+.brand-side-tab.campaigns-top-sec .chat-sidebar .chat-contacts li:last-child {
+  margin-bottom: 0;
+}
+.brand-side-tab.campaigns-top-sec .chat-sidebar .chat-contacts li:last-child::after {
+  content: none;
 }/*# sourceMappingURL=style.css.map */

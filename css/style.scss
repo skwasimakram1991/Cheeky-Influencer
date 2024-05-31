@@ -3862,3 +3862,68 @@ line-height: normal;
   }
 }
 //end of table which is from brand-campaign-details2 of campaign details2 page
+
+
+// brand-side-tab which is from brand-details2  brand side
+ .brand-side-tab.campaigns-top-sec{
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+border: 1px solid var(--Stroke, #E3E3E5);
+background: #FFF;
+margin: 0;
+.tabs{
+ gap: 0;
+ margin-bottom: 1.5rem;
+ li{
+  width: 50%;
+
+  &.active{
+    a{
+      color: var(--Text-Manrope, #0F1D3B);
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+display: flex;
+    }
+  }
+ }
+  a{
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #E3E3E5;
+    color: var(--Text-Inter, #898B97);
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align: center;
+span{
+  border-radius: 1.25rem;
+background: var(--Other-Color-Red, #FB4545);
+color: #FFF;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+  }
+}
+.chat-sidebar{
+  width: 100%;
+  border: 0px;
+  .chat-contacts{
+    padding: 0;
+    li{
+      &:last-child{
+        margin-bottom: 0;
+        &::after{
+          content: none;
+        }
+      }
+    }
+  }
+}
+ }
+  
+
+// end of rand-side-tab which is from brand-details2  brand side
