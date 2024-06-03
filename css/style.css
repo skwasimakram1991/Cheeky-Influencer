@@ -47,6 +47,9 @@ ul {
   line-height: normal;
   background: var(--Brand-Blue, #2870fb);
 }
+.glb-btn.export:hover {
+  color: #fff;
+}
 .glb-btn.wh {
   color: var(--Brand-Blue, #2870fb);
   text-align: center;
@@ -85,7 +88,8 @@ ul {
 .glb-btn.create span {
   font-size: 1.2rem;
   line-height: 1rem;
-  margin-right: 0.25rem;
+  margin-right: 0.4rem;
+  font-weight: 100;
 }
 
 .all-center-except-left table tr > td:not(:first-of-type),
@@ -1027,7 +1031,7 @@ footer h6 {
 
 .table-wrap {
   margin-top: 2.5rem;
-  border-radius: 1rem;
+  border-radius: 1.25rem;
   border: 1px solid #e3e3e5;
 }
 .table-wrap table {
@@ -1042,6 +1046,9 @@ footer h6 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.table-wrap table button:last-child {
+  margin-right: 0;
 }
 .table-wrap table button.open {
   border: 1px solid #01ae5a;
@@ -1061,7 +1068,7 @@ footer h6 {
   padding: 0.81rem 1rem;
 }
 .table-wrap table td img {
-  margin-right: 0.5rem;
+  margin-right: 0.3rem;
 }
 .table-wrap table .prof {
   display: flex;
@@ -3546,4 +3553,195 @@ footer h6 {
 }
 .brand-side-tab.campaigns-top-sec .chat-sidebar .chat-contacts li:last-child::after {
   content: none;
+}
+
+.saved {
+  border: 0px;
+  padding: 0 !important;
+}
+
+.brand-saved-listing-table table th {
+  color: var(--Text-Manrope, #0F1D3B) !important;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 1.125rem; /* 128.571% */
+}
+.brand-saved-listing-table table th, .brand-saved-listing-table table td {
+  color: var(--Dark-grey, #3F4B63);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.brand-saved-listing-table table th:first-child, .brand-saved-listing-table table td:first-child {
+  padding-left: 2.65rem;
+  position: relative;
+}
+.brand-saved-listing-table table th:first-child input[type=checkbox], .brand-saved-listing-table table td:first-child input[type=checkbox] {
+  position: absolute;
+  height: 1.1rem;
+  width: 1.1rem;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.brand-saved-listing-table table th .prof h6, .brand-saved-listing-table table td .prof h6 {
+  color: var(--Dark-grey, #3F4B63);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.brand-saved-listing-table table th .prof img, .brand-saved-listing-table table td .prof img {
+  margin-right: 0;
+}
+.brand-saved-listing-table table button {
+  background: transparent;
+}
+
+.brand-profile-views2-top-sec .select-wrp > img {
+  top: 0.59rem;
+}
+.brand-profile-views2-top-sec select {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+.brand-profile-views2-top-sec .glb-btn {
+  color: var(--Neutral-White, #FFF);
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0.6rem 1.95rem;
+}
+
+.application-details {
+  padding: 1.25rem;
+  border-radius: 1rem;
+  border: 1px solid var(--Stroke, #E3E3E5);
+  background: #FFF;
+  margin-bottom: 2.5rem;
+}
+.application-details h5 {
+  color: var(--Text-Manrope, #0F1D3B);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+}
+.application-details p {
+  color: var(--Text-Inter, #898B97);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.application-details p:not(:last-of-type) {
+  margin-bottom: 0.5rem;
+}
+.application-details p:last-of-type {
+  margin-bottom: 0;
+}
+.application-details.card-item {
+  padding-bottom: 0.88rem;
+}
+.application-details.card-item .image {
+  width: 3.3125rem;
+  height: 3.3125rem;
+  border-radius: 3.3125rem;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.application-details.card-item .progress-sec {
+  display: flex;
+  align-items: center;
+  gap: 0 1.38rem;
+  width: 100%;
+}
+.application-details.card-item .progress-sec .progress {
+  position: relative;
+  width: 100%;
+  height: 0.75rem;
+  border-radius: 4rem;
+}
+.application-details.card-item .progress-sec .progress::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 49%;
+  background: #41E985;
+  border-radius: 4rem;
+}
+.application-details.card-item .progress-sec h6 {
+  margin-bottom: 0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--Other-Color-Green, #41E985);
+  background: var(--Neutral-White, #FFF);
+}
+.application-details.card-item.green .image {
+  background: var(--Other-Color-Green, #41E985);
+}
+.application-details.card-item.green .progress-sec .progress::before {
+  background: #41E985;
+}
+.application-details.card-item.green .progress-sec h6 {
+  border: 1px solid var(--Other-Color-Green, #41E985);
+}
+.application-details.card-item.orange .image {
+  background: var(--Other-Color-Real-orange, #FAB560);
+}
+.application-details.card-item.orange .progress-sec .progress::before {
+  background: #FAB560;
+}
+.application-details.card-item.orange .progress-sec h6 {
+  border: 1px solid var(--Other-Color-Green, #FAB560);
+}
+.application-details.card-item.red .image {
+  background: var(--Other-Color-Red, #FB4545);
+}
+.application-details.card-item.red .progress-sec .progress::before {
+  background: #FB4545;
+}
+.application-details.card-item.red .progress-sec h6 {
+  border: 1px solid var(--Other-Color-Green, #FB4545);
+}
+.application-details.card-item .top-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+.application-details.card-item .top-card .image {
+  margin-right: 0.75rem;
+}
+.application-details.card-item .top-card .tx h3 {
+  color: var(--Text-Manrope, #0F1D3B);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.application-details.card-item .top-card .tx h3 span {
+  color: var(--Text-Manrope, #0F1D3B);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 0.5rem;
+}
+
+.brand-app-table button.active {
+  background: var(--Other-Color-Green, #41E985);
+}
+.brand-app-table button.active img {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(5%) saturate(0%) hue-rotate(79deg) brightness(111%) contrast(101%);
 }/*# sourceMappingURL=style.css.map */

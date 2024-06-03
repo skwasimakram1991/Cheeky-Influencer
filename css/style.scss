@@ -46,6 +46,11 @@ ul {
   font-weight: 600;
   line-height: normal;
   background: var(--Brand-Blue, #2870fb);
+  &.export{
+    &:hover{
+      color: #fff;
+    }
+  }
   &.wh {
     color: var(--Brand-Blue, #2870fb);
     text-align: center;
@@ -83,7 +88,8 @@ ul {
     span {
       font-size: 1.2rem;
       line-height: 1rem;
-      margin-right: 0.25rem;
+      margin-right: 0.4rem;
+      font-weight: 100;
     }
   }
 }
@@ -1130,7 +1136,7 @@ footer {
 
 .table-wrap {
   margin-top: 2.5rem;
-  border-radius: 1rem;
+  border-radius: 1.25rem;
   border: 1px solid #e3e3e5;
   table {
     width: 100%;
@@ -1143,6 +1149,9 @@ footer {
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+      &:last-child{
+        margin-right: 0;
+      }
       &.open {
         border: 1px solid #01ae5a;
         color: #309269;
@@ -1165,7 +1174,7 @@ footer {
     }
     td {
       img {
-        margin-right: 0.5rem;
+        margin-right: 0.3rem;
       }
     }
     .prof {
@@ -3927,3 +3936,234 @@ line-height: normal;
   
 
 // end of rand-side-tab which is from brand-details2  brand side
+
+
+// start of brand saved candidate
+    .saved{
+      border:0px;
+      padding: 0 !important;
+    }
+    .brand-saved-listing-table{
+      table{
+        th{
+          color: var(--Text-Manrope, #0F1D3B) !important;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 600 !important;
+line-height: 1.125rem; /* 128.571% */
+        }
+        th,td{
+          color: var(--Dark-grey, #3F4B63);
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          &:first-child{
+            padding-left: 2.65rem;
+           position: relative;
+           input[type=checkbox]{
+            position: absolute;
+            height: 1.1rem;
+            width: 1.1rem;
+            left:1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+           }
+          }
+         .prof{
+          h6{
+            color: var(--Dark-grey, #3F4B63);
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+          }
+          img{
+            margin-right: 0;
+          }
+         }
+        }
+        button{
+          background: transparent;
+        }
+      }
+    }
+// end of brand saved candidate
+
+//brand-prfile-views-table start
+.brand-profile-views2-top-sec{
+  .select-wrp{
+      & > img{
+        top: 0.59rem;
+      }
+  }
+  select{
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+  .glb-btn{
+    color: var(--Neutral-White, #FFF);
+text-align: center;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding: 0.6rem 1.95rem;
+  }
+}
+  
+// end of brand-prfile-views-table
+
+//start of application page 
+  .application-details{
+    padding: 1.25rem;
+    border-radius: 1rem;
+border: 1px solid var(--Stroke, #E3E3E5);
+background: #FFF;
+margin-bottom: 2.5rem;
+h5{
+  color: var(--Text-Manrope, #0F1D3B);
+  font-size: 1.125rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 0.5rem;
+}
+p{
+color: var(--Text-Inter, #898B97);
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+&:not(:last-of-type){
+  margin-bottom: 0.5rem;
+}
+&:last-of-type{
+  margin-bottom: 0;
+}
+}
+&.card-item{
+  padding-bottom: 0.88rem;
+  .image{
+    width: 3.3125rem;
+height: 3.3125rem;
+border-radius: 3.3125rem;
+background: transparent;
+display: flex;
+align-items: center;
+justify-content: center;
+  }
+ 
+  .progress-sec{
+    display: flex;
+    align-items: center;
+    gap: 0 1.38rem;
+    width: 100%;
+    .progress{
+      position: relative;
+      width: 100%;
+      height: 0.75rem;
+      border-radius: 4rem;
+      &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 49%;
+        background: #41E985;
+        border-radius: 4rem;
+      }
+    }
+    h6{
+      margin-bottom: 0;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.5rem;
+border: 1px solid var(--Other-Color-Green, #41E985);
+background: var(--Neutral-White, #FFF);
+    }
+   }
+   &.green{
+    .image{
+      background: var(--Other-Color-Green, #41E985);
+    }
+    .progress-sec{
+      .progress{
+        &::before{
+          background:#41E985;
+        }
+      }
+      h6{
+        border: 1px solid var(--Other-Color-Green, #41E985);
+      }
+    }
+  }
+  &.orange{
+    .image{
+      background: var(--Other-Color-Real-orange, #FAB560);
+    }
+    .progress-sec{
+      .progress{
+        &::before{
+          background:#FAB560;
+        }
+      }
+      h6{
+        border: 1px solid var(--Other-Color-Green, #FAB560);
+      }
+    }
+  }
+  &.red{
+    .image{
+      background: var(--Other-Color-Red, #FB4545);
+    }
+    .progress-sec{
+      .progress{
+        &::before{
+          background:#FB4545;
+        }
+      }
+      h6{
+        border: 1px solid var(--Other-Color-Green, #FB4545);
+      }
+    }
+  }
+  .top-card{
+     display: flex;
+     align-items: center;
+    margin-bottom: 0.3rem;
+     .image{
+      margin-right: 0.75rem;
+     }
+     .tx{
+      
+      h3{
+        color: var(--Text-Manrope, #0F1D3B);
+font-size: 2rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 0;
+display: flex;
+      align-items: center;
+span{
+  color: var(--Text-Manrope, #0F1D3B);
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-left: 0.5rem;
+}
+      }
+     }
+  }
+}
+  }
+  .brand-app-table{
+    button.active{
+      background: var(--Other-Color-Green, #41E985);
+      img{
+        filter: brightness(0) saturate(100%) invert(99%) sepia(5%) saturate(0%) hue-rotate(79deg) brightness(111%) contrast(101%);
+      }
+    }
+  }
+// end of application page
