@@ -1142,6 +1142,9 @@ footer h6 {
   display: flex;
   gap: 0 0.63rem;
 }
+.pagination li.prev a:hover img, .pagination li.next a:hover img {
+  filter: brightness(0) saturate(100%) invert(93%) sepia(96%) saturate(0%) hue-rotate(88deg) brightness(104%) contrast(108%);
+}
 .pagination li.active a {
   border-radius: var(--Shadow-Y-axis, 0.25rem);
   background: var(--Brand-Blue, #2870fb);
@@ -3483,14 +3486,14 @@ footer h6 {
 }
 
 .brand-campaign-details2-table-wrap table tr td {
-  color: var(--Dark-grey, #3F4B63);
+  color: var(--Dark-grey, #3f4b63);
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 .brand-campaign-details2-table-wrap table tr td .prof h6 {
-  color: var(--Dark-grey, #3F4B63);
+  color: var(--Dark-grey, #3f4b63);
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -3503,8 +3506,8 @@ footer h6 {
 .brand-side-tab.campaigns-top-sec {
   padding: 1.5rem;
   border-radius: 0.625rem;
-  border: 1px solid var(--Stroke, #E3E3E5);
-  background: #FFF;
+  border: 1px solid var(--Stroke, #e3e3e5);
+  background: #fff;
   margin: 0;
 }
 .brand-side-tab.campaigns-top-sec .tabs {
@@ -3515,7 +3518,7 @@ footer h6 {
   width: 50%;
 }
 .brand-side-tab.campaigns-top-sec .tabs li.active a {
-  color: var(--Text-Manrope, #0F1D3B);
+  color: var(--Text-Manrope, #0f1d3b);
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -3524,8 +3527,8 @@ footer h6 {
 }
 .brand-side-tab.campaigns-top-sec .tabs a {
   padding: 0.5rem 0.75rem;
-  border-bottom: 1px solid #E3E3E5;
-  color: var(--Text-Inter, #898B97);
+  border-bottom: 1px solid #e3e3e5;
+  color: var(--Text-Inter, #898b97);
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -3534,8 +3537,8 @@ footer h6 {
 }
 .brand-side-tab.campaigns-top-sec .tabs a span {
   border-radius: 1.25rem;
-  background: var(--Other-Color-Red, #FB4545);
-  color: #FFF;
+  background: var(--Other-Color-Red, #fb4545);
+  color: #fff;
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 700;
@@ -3561,23 +3564,26 @@ footer h6 {
 }
 
 .brand-saved-listing-table table th {
-  color: var(--Text-Manrope, #0F1D3B) !important;
+  color: var(--Text-Manrope, #0f1d3b) !important;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600 !important;
   line-height: 1.125rem; /* 128.571% */
 }
-.brand-saved-listing-table table th, .brand-saved-listing-table table td {
-  color: var(--Dark-grey, #3F4B63);
+.brand-saved-listing-table table th,
+.brand-saved-listing-table table td {
+  color: var(--Dark-grey, #3f4b63);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
-.brand-saved-listing-table table th:first-child, .brand-saved-listing-table table td:first-child {
+.brand-saved-listing-table table th:first-child,
+.brand-saved-listing-table table td:first-child {
   padding-left: 2.65rem;
   position: relative;
 }
-.brand-saved-listing-table table th:first-child input[type=checkbox], .brand-saved-listing-table table td:first-child input[type=checkbox] {
+.brand-saved-listing-table table th:first-child input[type=checkbox],
+.brand-saved-listing-table table td:first-child input[type=checkbox] {
   position: absolute;
   height: 1.1rem;
   width: 1.1rem;
@@ -3586,13 +3592,15 @@ footer h6 {
   transform: translateY(-50%);
   cursor: pointer;
 }
-.brand-saved-listing-table table th .prof h6, .brand-saved-listing-table table td .prof h6 {
-  color: var(--Dark-grey, #3F4B63);
+.brand-saved-listing-table table th .prof h6,
+.brand-saved-listing-table table td .prof h6 {
+  color: var(--Dark-grey, #3f4b63);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
-.brand-saved-listing-table table th .prof img, .brand-saved-listing-table table td .prof img {
+.brand-saved-listing-table table th .prof img,
+.brand-saved-listing-table table td .prof img {
   margin-right: 0;
 }
 .brand-saved-listing-table table button {
@@ -3607,7 +3615,7 @@ footer h6 {
   padding-bottom: 0.5rem !important;
 }
 .brand-profile-views2-top-sec .glb-btn {
-  color: var(--Neutral-White, #FFF);
+  color: var(--Neutral-White, #fff);
   text-align: center;
   font-size: 0.75rem;
   font-style: normal;
@@ -3619,12 +3627,12 @@ footer h6 {
 .application-details {
   padding: 1.25rem;
   border-radius: 1rem;
-  border: 1px solid var(--Stroke, #E3E3E5);
-  background: #FFF;
+  border: 1px solid var(--Stroke, #e3e3e5);
+  background: #fff;
   margin-bottom: 2.5rem;
 }
 .application-details h5 {
-  color: var(--Text-Manrope, #0F1D3B);
+  color: var(--Text-Manrope, #0f1d3b);
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
@@ -3632,7 +3640,7 @@ footer h6 {
   margin-bottom: 0.5rem;
 }
 .application-details p {
-  color: var(--Text-Inter, #898B97);
+  color: var(--Text-Inter, #898b97);
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -3675,42 +3683,42 @@ footer h6 {
   top: 0;
   height: 100%;
   width: 49%;
-  background: #41E985;
+  background: #41e985;
   border-radius: 4rem;
 }
 .application-details.card-item .progress-sec h6 {
   margin-bottom: 0;
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
-  border: 1px solid var(--Other-Color-Green, #41E985);
-  background: var(--Neutral-White, #FFF);
+  border: 1px solid var(--Other-Color-Green, #41e985);
+  background: var(--Neutral-White, #fff);
 }
 .application-details.card-item.green .image {
-  background: var(--Other-Color-Green, #41E985);
+  background: var(--Other-Color-Green, #41e985);
 }
 .application-details.card-item.green .progress-sec .progress::before {
-  background: #41E985;
+  background: #41e985;
 }
 .application-details.card-item.green .progress-sec h6 {
-  border: 1px solid var(--Other-Color-Green, #41E985);
+  border: 1px solid var(--Other-Color-Green, #41e985);
 }
 .application-details.card-item.orange .image {
-  background: var(--Other-Color-Real-orange, #FAB560);
+  background: var(--Other-Color-Real-orange, #fab560);
 }
 .application-details.card-item.orange .progress-sec .progress::before {
-  background: #FAB560;
+  background: #fab560;
 }
 .application-details.card-item.orange .progress-sec h6 {
-  border: 1px solid var(--Other-Color-Green, #FAB560);
+  border: 1px solid var(--Other-Color-Green, #fab560);
 }
 .application-details.card-item.red .image {
-  background: var(--Other-Color-Red, #FB4545);
+  background: var(--Other-Color-Red, #fb4545);
 }
 .application-details.card-item.red .progress-sec .progress::before {
-  background: #FB4545;
+  background: #fb4545;
 }
 .application-details.card-item.red .progress-sec h6 {
-  border: 1px solid var(--Other-Color-Green, #FB4545);
+  border: 1px solid var(--Other-Color-Green, #fb4545);
 }
 .application-details.card-item .top-card {
   display: flex;
@@ -3721,7 +3729,7 @@ footer h6 {
   margin-right: 0.75rem;
 }
 .application-details.card-item .top-card .tx h3 {
-  color: var(--Text-Manrope, #0F1D3B);
+  color: var(--Text-Manrope, #0f1d3b);
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
@@ -3731,7 +3739,7 @@ footer h6 {
   align-items: center;
 }
 .application-details.card-item .top-card .tx h3 span {
-  color: var(--Text-Manrope, #0F1D3B);
+  color: var(--Text-Manrope, #0f1d3b);
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
@@ -3740,8 +3748,117 @@ footer h6 {
 }
 
 .brand-app-table button.active {
-  background: var(--Other-Color-Green, #41E985);
+  background: var(--Other-Color-Green, #41e985);
 }
 .brand-app-table button.active img {
   filter: brightness(0) saturate(100%) invert(99%) sepia(5%) saturate(0%) hue-rotate(79deg) brightness(111%) contrast(101%);
+}
+.brand-app-table button.rejected {
+  border: 1px solid var(--Other-Color-Red, #fb4545);
+  background: var(--Other-Color-Red, #fb4545);
+}
+.brand-app-table button.rejected img {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(5%) saturate(0%) hue-rotate(79deg) brightness(111%) contrast(101%);
+}
+
+.advance-search.glb-btn.create {
+  border-radius: 0.375rem;
+  padding: 0.65rem;
+  color: var(--Neutral-White, #fff);
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.advance-search.glb-btn.create img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(8%) saturate(7478%) hue-rotate(236deg) brightness(118%) contrast(110%);
+  margin-left: 0.5rem;
+}
+
+.brnad-explore-creator table td img:has(+ img):not(:last-of-type) {
+  margin-right: 0.5rem;
+}
+.brnad-explore-creator table td button {
+  background: transparent;
+}
+
+.slct_sec {
+  margin: 40px 0 28px;
+  border-radius: 8px;
+  border: 1px solid var(--Stroke, #E3E3E5);
+  background: var(--Neutral-White, #FFF);
+  padding: 28px 27px 28px 28px;
+}
+.slct_sec label {
+  color: var(--Text-Manrope, #0F1D3B);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  margin-bottom: 11px;
+}
+.slct_sec label span img {
+  width: 20px;
+}
+.slct_sec .row {
+  row-gap: 24px;
+}
+.slct_sec .select-wrp {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--Stroke, #E3E3E5);
+  background: var(--Neutral-White, #FFF);
+  position: relative;
+  cursor: pointer;
+}
+.slct_sec .select-wrp select {
+  width: 100%;
+  border: 0px;
+  outline: none;
+  padding: 10px 35px 10px 10px;
+  background: none;
+  color: var(--Brand-Gray, #898B97);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-indent: 0px;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.slct_sec .select-wrp::after {
+  content: "";
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: url("../images/brn-explr2-down-arrw.svg");
+  background-repeat: no-repeat;
+}
+.slct_sec .btns {
+  display: flex;
+  justify-content: flex-end;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  align-items: center;
+}
+.slct_sec .btns .glb-btn {
+  padding: 12px 28.5px;
+}
+.slct_sec .btns .glb-btn:hover {
+  color: #fff;
+}
+.slct_sec .btns .glb-btn.bd {
+  background-color: #fff;
+  border: 1px solid var(--Stroke, #E3E3E5);
+  color: #3F4B63;
 }/*# sourceMappingURL=style.css.map */
